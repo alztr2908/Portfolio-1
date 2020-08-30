@@ -95,8 +95,6 @@ footer {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-          clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
 .container i {
@@ -207,8 +205,6 @@ footer a:hover {
 .who-me img {
   width: 300px;
   height: 300px;
-  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-          clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   margin: 1em 0;
 }
 
