@@ -13,7 +13,7 @@
 }
 
 .view-work {
-  color: white;
+  color: rgb(146, 143, 143);
   font-size: 1.5rem;
   font-weight: 600;
   padding: .5em 1em;
@@ -28,7 +28,7 @@
   transition: $transition;
 
   &:hover {
-    background-color: $font-yellow;
+    background-color: #db6a00;
     color: $black;
 
     i {
