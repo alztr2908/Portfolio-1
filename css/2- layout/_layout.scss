@@ -1,7 +1,7 @@
 .front-page {
   min-height: 100vh;
-  display: grid;
-  place-items: center;
+  background: url(../websites/background.jpg) no-repeat;
+  background-size: 100vw 100vh;
 }
 
 .portfolio {
