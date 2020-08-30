@@ -287,4 +287,9 @@ footer a:hover {
   -webkit-box-shadow: 10px 10px 5px 0px rgba(54, 49, 49, 0.418);
           box-shadow: 10px 10px 5px 0px rgba(54, 49, 49, 0.418);
 }
+
+.show-projects img:hover {
+  -webkit-box-shadow: 10px 10px 5px 0px #db6a00;
+          box-shadow: 10px 10px 5px 0px #db6a00;
+}
 /*# sourceMappingURL=style.css.map */
