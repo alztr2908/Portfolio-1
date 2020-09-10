@@ -1,0 +1,15 @@
+@mixin flexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin gridCenter {
+  display: grid;
+  align-items: center;
+}
+
+@mixin widthHeight($width, $height) {
+  width: $width;
+  height: $height;
+}

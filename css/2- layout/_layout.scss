@@ -1,66 +1,100 @@
+/*
+* MAIN LAYOUT 
+*/
+
+
 .front-page {
   min-height: 100vh;
   background: url(../websites/background.jpg) no-repeat;
   background-size: 100vw 100vh;
 }
 
+.about {
+  @include flexColumnCenter;
+  padding: 2em 0;
+}
+
+
 .portfolio {
+  @extend .about;
   background: url(../websites/projects.jpg) no-repeat;
   background-size: 100vw 150vh;
 
-  h1 {
-    color: white;
+  /*
+  * SUB LAYOUT OF .portfolio
+  */
+
+  &__show-projects {
+    @include flexColumnCenter;
+    padding: 5em 0;
+
+    &--show-projects-list {
+      display: flex;
+    }
   }
 }
+
+.footer {
+  @include flexColumnCenter;
+  color: rgb(212, 197, 197);
+  background-color: #292525;
+}
+
+/*
+* SUB LAYOUT
+*/
+
 
 .description {
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 2.5em 0;
+
+  /*
+  * SUB LAYOUT OF .description
+  */
+
+  &__ability{
+    @include flexColumnCenter;
+    width: 15%;
+    margin: 0 1em;
+    padding: 2em 0;
+  }
 }
 
-.ability {
-  width: 15%;
-  margin: 0 1em;
-  padding: 2em 0;
+.showcase {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 65%;
+  padding-bottom: 4em;
 
-  p {
-    text-align: center;
+  /*
+  * SUB LAYOUT OF .SHOWCASE
+  */
+
+  &__who-me {
+    @include flexColumnCenter;
+    width: 50%;
+    padding: 0 3em;
+  }
+
+  &__skills {
+    @include gridCenter;
+    width: 50%;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2em;
+    padding: 0 3em;
   }
 }
 
-.container {
-  width: 100px;
-  height: 80px;
-  background-color: #db6a00;
-  display: grid;
-  place-items: center;
 
-  i {
-    font-size: 2.5rem;
-    color: $black;
-  }
-}
 
-footer {
-  color: rgb(212, 197, 197);
-  background-color: #292525;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-  a {
-    color: rgb(219, 203, 203);
-    font-size: 2rem;
-    margin: .5em .2em;
-  }
 
-  a:hover {
-    color: white;
-  }
-}
+
+
+
+
+
+
 
